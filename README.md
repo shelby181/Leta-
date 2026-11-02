@@ -145,7 +145,7 @@ footer {
     border-top: 1px solid #45351f;
 }
 </style>
-</head>
+
 
 <body>
 
