@@ -216,7 +216,7 @@ footer {
             Gen anpil lòt bèl paj ki rete pou nou ekri.
         </p>
     </div>
-</section>
+
 </section>
 
 <section id="story">
@@ -339,4 +339,4 @@ function checkCode() {
 </script>
 
 </body>
-</html>
+Nèg dous ou a 🤗
