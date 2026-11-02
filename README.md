@@ -182,23 +182,41 @@ footer {
         <p>jours de souvenirs et de complicité.</p>
     </div>
 </section>
+<section id="souvenirs">
+    <h2>❤️ Nos plus beaux souvenirs</h2>
 
-<section id="gallery">
-    <h2>📸 Notre galerie</h2>
-    <p>Quelques images pour conserver nos plus beaux souvenirs.</p>
-
-    <div class="gallery">
-        <img src="photo1.jpg" alt="Notre souvenir">
-        alt="Notre souvenir
-        <img src="photo2.jpg"
-    alt="Notre souvenir">
-        <img src="photo3.jpg">
+    <div class="card">
+        <h3 style="color:#d9b66f;">10 juillet 2026 🥹</h3>
+        <p>
+            Yon jou ki te pote yon bèl chanjman.
+            Yon rankont ki te vin tounen yon bèl istwa.
+        </p>
     </div>
 
-    <p style="margin-top:15px;color:#aaa;">
-        Les images sont des emplacements temporaires.
-        Nous ajouterons vos vraies photos ensuite.
-    </p>
+    <div class="card">
+        <h3 style="color:#d9b66f;">Nos premiers échanges 💌</h3>
+        <p>
+            Premye mesaj yo, premye konvèsasyon yo,
+            ak ti moman ki te fè nou vin pi pwòch.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3 style="color:#d9b66f;">Des moments inoubliables ❤️</h3>
+        <p>
+            Gen moman ki pa bezwen foto pou yo rete
+            grave nan memwa nou.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3 style="color:#d9b66f;">À écrire ensemble ✨</h3>
+        <p>
+            Pi bèl souvni nou yo poko fini.
+            Gen anpil lòt bèl paj ki rete pou nou ekri.
+        </p>
+    </div>
+</section>
 </section>
 
 <section id="story">
