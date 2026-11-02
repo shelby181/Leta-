@@ -1,4 +1,4 @@
-Pour toi mon amour 
+Pour toi mon amour 💍❤🫂
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shelby's Universe ❤️</title>
@@ -330,7 +330,7 @@ function checkCode() {
 
     if (code === "1007") {
         document.getElementById("secretResult").textContent =
-            "Tu as trouvé ! ❤️ Tu occupes une place spéciale dans cet univers.";
+            "Tu as trouvé ! ❤️ Tu occupes une place spéciale dans cet univers.T'es l'unique, ma paix, ma douceur, tu représentes tout pour toi. N'oublie pas que tu es spéciale et tu as beaucoup de valeur à mes yeux, l'amour, la joie, la paix que tu m'apportes, je prêtes cette phrase que tu aimes prononcé je me sens, je me sens 🕺🕺🤗. I LOVE YOU madan maryem ❤💍.";
     } else {
         document.getElementById("secretResult").textContent =
             "Ce n'est pas le bon code. Essaie encore !";
