@@ -232,7 +232,6 @@ footer {
         <img src="IMG-20261011-WA0065.jpg" alt="Souvenir 1">
         <img src="IMG-20261011-WA0068.jpg" alt="Souvenir 2">
         <img src="IMG-20261011-WA0071.jpg" alt="Souvenir 3"> 
-</section>
 
 <section id="story">
     <h2>📖 Notre chronologie</h2>
