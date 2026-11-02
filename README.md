@@ -229,22 +229,14 @@ footer {
     <p>Quelques images pour conserver nos plus beaux souvenirs.</p>
 
 <div class="gallery">
-    <img src="IMG-20261011-WA0065.jpg"
-         alt="Souvenir 1"
-         onclick="openPhoto(this.src)">
-
-    <img src="IMG-20261011-WA0068.jpg"
-         alt="Souvenir 2"
-         onclick="openPhoto(this.src)">
-
-    <img src="IMG-20261011-WA0071.jpg"
-         alt="Souvenir 3"
-         onclick="openPhoto(this.src)">
+    <img src="IMG-20261011-WA0065.jpg" onclick="agrandir(this)">
+    <img src="IMG-20261011-WA0068.jpg" onclick="agrandir(this)">
+    <img src="IMG-20261011-WA0071.jpg" onclick="agrandir(this)">
 </div>
 
-<div id="photoViewer" onclick="closePhoto()">
-    <span>×</span>
-    <img id="largePhoto">
+<div id="visionneuse" onclick="this.style.display='none'">
+    <span>✕</span>
+    <img id="photoGrande">
 </div>
 
 <section id="story">
