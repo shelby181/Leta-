@@ -224,7 +224,14 @@ footer {
         Les images sont des emplacements temporaires.
         Nous ajouterons vos vraies photos ensuite.
     </p>
-    
+   section id="gallery">
+    <h2>📸 Notre galerie</h2>
+    <p>Quelques images pour conserver nos plus beaux souvenirs.</p>
+
+    <div class="gallery">
+        <img src="IMG-20261011-WA0065.jpg" alt="Souvenir 1">
+        <img src="IMG-20261011-WA0068.jpg" alt="Souvenir 2">
+        <img src="IMG-20261011-WA0071.jpg" alt="Souvenir 3"> 
 </section>
 
 <section id="story">
