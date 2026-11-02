@@ -190,7 +190,7 @@ footer {
     <p>Quelques images pour conserver nos plus beaux souvenirs.</p>
 
     <div class="gallery">
-        <img src="https://placehold.co/300x400/17100d/d9b66f?text=Photo+1" alt="Souvenir 1">
+        <img src="photo1.jpg" alt="Notre souvenir">
         <img src="https://placehold.co/300x400/17100d/d9b66f?text=Photo+2" alt="Souvenir 2">
         <img src="https://placehold.co/300x400/17100d/d9b66f?text=Photo+3" alt="Souvenir 3">
     </div>
