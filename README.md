@@ -190,10 +190,11 @@ footer {
     <p>Quelques images pour conserver nos plus beaux souvenirs.</p>
 
     <div class="gallery">
-        <img src="IMG-20261011-WA0071.jpg" alt="Notre souvenir
-        <img src="IMG-20261011-WA0061.jpg" 
-    alt="Notre souvenir
-        <img src="IMG-20261011-WA0068">
+        <img src="photo1.jpg" alt="Notre souvenir">
+        alt="Notre souvenir
+        <img src="photo2.jpg"
+    alt="Notre souvenir">
+        <img src="photo3.jpg">
     </div>
 
     <p style="margin-top:15px;color:#aaa;">
