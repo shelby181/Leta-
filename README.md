@@ -1,4 +1,4 @@
-<html lang="fr">
+20px <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -190,9 +190,10 @@ footer {
     <p>Quelques images pour conserver nos plus beaux souvenirs.</p>
 
     <div class="gallery">
-        <img src="photo1.jpg" alt="Notre souvenir">
-        <img src="https://placehold.co/300x400/17100d/d9b66f?text=Photo+2" alt="Souvenir 2">
-        <img src="https://placehold.co/300x400/17100d/d9b66f?text=Photo+3" alt="Souvenir 3">
+        <img src="IMG-20261011-WA0071.jpg" alt="Notre souvenir
+        <img src="IMG-20261011-WA0061.jpg" 
+    alt="Notre souvenir
+        <img src="IMG-20261011-WA0068">
     </div>
 
     <p style="margin-top:15px;color:#aaa;">
