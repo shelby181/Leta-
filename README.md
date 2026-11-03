@@ -120,24 +120,59 @@ input {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     gap: 12px;
+    margin-top: 25px;
 }
 
 .gallery img {
     width: 100%;
-    height: 180px;
+    height: 190px;
     object-fit: cover;
     border-radius: 12px;
     border: 1px solid #c49b50;
+    cursor: pointer;
+    transition: transform 0.3s;
 }
 
-.hidden {
-    display: none;
+.gallery img:hover {
+    transform: scale(1.04);
 }
 
 #message, #surprise, #secretResult {
     color: #f0c8d6;
     margin: 20px auto;
     font-size: 18px;
+}
+
+/* FENETRE POUR AGRANDIR LES PHOTOS */
+
+#photoModal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.96);
+    z-index: 99999;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#photoAgrandie {
+    max-width: 95%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 1px solid #d9b66f;
+}
+
+.closePhoto {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 42px;
+    cursor: pointer;
+    background: none;
+    border: none;
 }
 
 footer {
@@ -191,16 +226,34 @@ footer {
     <p>Quelques images pour conserver nos plus beaux souvenirs.</p>
 
     <div class="gallery">
-        <img src="https://placehold.co/300x400/17100d/d9b66f?text=Photo+1" alt="Souvenir 1">
-        <img src="https://placehold.co/300x400/17100d/d9b66f?text=Photo+2" alt="Souvenir 2">
-        <img src="https://placehold.co/300x400/17100d/d9b66f?text=Photo+3" alt="Souvenir 3">
-    </div>
 
-    <p style="margin-top:15px;color:#aaa;">
-        Les images sont des emplacements temporaires.
-        Nous ajouterons vos vraies photos ensuite.
-    </p>
+        <img src="IMG-20261011-WA0065.jpg"
+             alt="Souvenir 1"
+             onclick="ouvrirPhoto(this.src)">
+
+        <img src="IMG-20261011-WA0068.jpg"
+             alt="Souvenir 2"
+             onclick="ouvrirPhoto(this.src)">
+
+        <img src="IMG-20261011-WA0071.jpg"
+             alt="Souvenir 3"
+             onclick="ouvrirPhoto(this.src)">
+
+    </div>
 </section>
+
+<!-- FENETRE D'AGRANDISSEMENT -->
+
+<div id="photoModal" onclick="fermerPhoto()">
+
+    <button class="closePhoto"
+            onclick="fermerPhoto()">×</button>
+
+    <img id="photoAgrandie"
+         alt="Photo agrandie"
+         onclick="event.stopPropagation()">
+
+</div>
 
 <section id="story">
     <h2>📖 Notre chronologie</h2>
@@ -272,7 +325,8 @@ footer {
 
 <script>
 
-// Compteur de jours
+// COMPTEUR DE JOURS
+
 const startDate = new Date(2026, 6, 10);
 const today = new Date();
 
@@ -283,7 +337,8 @@ document.getElementById("counter").textContent =
     days >= 0 ? days + " jours" : "Bientôt ❤️";
 
 
-// Messages aléatoires
+// MESSAGES ALEATOIRES
+
 const messages = [
     "Même les journées ordinaires deviennent spéciales avec toi. ❤️",
     "Tu es une belle partie de mes souvenirs préférés.",
@@ -299,14 +354,16 @@ function newMessage() {
 }
 
 
-// Boîte surprise
+// BOITE SURPRISE
+
 function showSurprise() {
     document.getElementById("surprise").textContent =
         "Surprise ! ❤️ Peu importe les kilomètres, certains liens gardent toute leur beauté. Tu es une personne précieuse.";
 }
 
 
-// Code secret
+// CODE SECRET
+
 function checkCode() {
     const code = document.getElementById("secretCode").value;
 
@@ -317,6 +374,22 @@ function checkCode() {
         document.getElementById("secretResult").textContent =
             "Ce n'est pas le bon code. Essaie encore !";
     }
+}
+
+
+// AGRANDIR LES PHOTOS
+
+function ouvrirPhoto(source) {
+    document.getElementById("photoAgrandie").src = source;
+    document.getElementById("photoModal").style.display = "flex";
+}
+
+
+// FERMER LES PHOTOS
+
+function fermerPhoto() {
+    document.getElementById("photoModal").style.display = "none";
+    document.getElementById("photoAgrandie").src = "";
 }
 
 </script>
