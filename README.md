@@ -1,94 +1,22 @@
-Pour toi mon amour 💍❤🫂
+<!DOCTYPE html>
+<html lang="fr">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shelby's Universe ❤️</title>
 
 <style>
 * {
-    .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 25px;
-}
-
-.gallery img {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 15px;
-    border: 1px solid #d9b66f;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.gallery img:active {
-    transform: scale(0.96);
-}
-
-/* Fenêtre photo */
-#photoModal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.96);
-    z-index: 99999;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-}
-
-#photoAgrandie {
-    max-width: 100%;
-    max-height: 85vh;
-    object-fit: contain;
-    border-radius: 12px;
-}
-
-.closePhoto {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    background: transparent;
-    color: white;
-    border: none;
-    font-size: 42px;
-    cursor: pointer;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    <section id="gallery">
-    <h2>📸 Nos plus beaux souvenirs</h2>
-    <p>Chaque image garde une partie de notre histoire. ❤️</p>
-
-    <div class="gallery">
-
-        <img src="IMG-20261011-WA0065.jpg"
-             alt="Souvenir 1"
-             onclick="ouvrirPhoto(this.src)">
-
-        <img src="IMG-20261011-WA0068.jpg"
-             alt="Souvenir 2"
-             onclick="ouvrirPhoto(this.src)">
-
-        <img src="IMG-20261011-WA0071.jpg"
-             alt="Souvenir 3"
-             onclick="ouvrirPhoto(this.src)">
-
-    </div>
-</section>
-
-<!-- Fenêtre d'agrandissement -->
-<div id="photoModal" onclick="fermerPhoto()">
-
-    <button class="closePhoto"
-            onclick="fermerPhoto()">×</button>
-
-    <img id="photoAgrandie" alt="Photo agrandie"
-         onclick="event.stopPropagation()">
-
-</div>
+    background: #090909;
+    color: white;
+    font-family: Georgia, serif;
+    line-height: 1.7;
 }
 
 header {
@@ -219,7 +147,7 @@ footer {
     border-top: 1px solid #45351f;
 }
 </style>
-
+</head>
 
 <body>
 
@@ -257,48 +185,23 @@ footer {
         <p>jours de souvenirs et de complicité.</p>
     </div>
 </section>
-<section id="souvenirs">
-    <h2>❤️ Nos plus beaux souvenirs</h2>
 
-    <div class="card">
-        <h3 style="color:#d9b66f;">10 juillet 2026 🥹</h3>
-        <p>
-            Yon jou ki te pote yon bèl chanjman.
-            Yon rankont ki te vin tounen yon bèl istwa.
-        </p>
-    </div>
+<section id="gallery">
+    <h2>📸 Notre galerie</h2>
+    <p>Quelques images pour conserver nos plus beaux souvenirs.</p>
 
-    <div class="card">
-        <h3 style="color:#d9b66f;">Nos premiers échanges 💌</h3>
-        <p>
-            Premye mesaj yo, premye konvèsasyon yo,
-            ak ti moman ki te fè nou vin pi pwòch.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3 style="color:#d9b66f;">Des moments inoubliables ❤️</h3>
-        <p>
-            Gen moman ki pa bezwen foto pou yo rete
-            grave nan memwa nou.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3 style="color:#d9b66f;">À écrire ensemble ✨</h3>
-        <p>
-            Pi bèl souvni nou yo poko fini.
-            Gen anpil lòt bèl paj ki rete pou nou ekri.
-        </p>
-    </div>
-    
+    <div class="gallery">
+        <img src="https://placehold.co/300x400/17100d/d9b66f?text=Photo+1" alt="Souvenir 1">
+        <img src="https://placehold.co/300x400/17100d/d9b66f?text=Photo+2" alt="Souvenir 2">
+        <img src="https://placehold.co/300x400/17100d/d9b66f?text=Photo+3" alt="Souvenir 3">
     </div>
 
     <p style="margin-top:15px;color:#aaa;">
         Les images sont des emplacements temporaires.
         Nous ajouterons vos vraies photos ensuite.
     </p>
-   
+</section>
+
 <section id="story">
     <h2>📖 Notre chronologie</h2>
 
@@ -366,16 +269,7 @@ footer {
     <p>Créé avec ❤️ par Shelby.</p>
     <p>Une histoire, des souvenirs, un univers.</p>
 </footer>
-function ouvrirPhoto(source) {
-    document.getElementById("photoAgrandie").src = source;
 
-    document.getElementById("photoModal").style.display = "flex";
-}
-
-function fermerPhoto() {
-    document.getElementById("photoModal").style.display = "none";
-    document.getElementById("photoAgrandie").src = "";
-}
 <script>
 
 // Compteur de jours
@@ -418,7 +312,7 @@ function checkCode() {
 
     if (code === "1007") {
         document.getElementById("secretResult").textContent =
-            "Tu as trouvé ! ❤️ Tu occupes une place spéciale dans cet univers.T'es l'unique, ma paix, ma douceur, tu représentes tout pour toi. N'oublie pas que tu es spéciale et tu as beaucoup de valeur à mes yeux, l'amour, la joie, la paix que tu m'apportes, je prêtes cette phrase que tu aimes prononcé je me sens, je me sens 🕺🕺🤗. I LOVE YOU madan maryem ❤💍.";
+            "Tu as trouvé ! ❤️ Tu occupes une place spéciale dans cet univers.";
     } else {
         document.getElementById("secretResult").textContent =
             "Ce n'est pas le bon code. Essaie encore !";
@@ -428,4 +322,4 @@ function checkCode() {
 </script>
 
 </body>
-Nèg dous ou a 🤗
+</html>
