@@ -367,7 +367,7 @@ function checkCode() {
 
     if (code === "1007") {
         document.getElementById("secretResult").textContent =
-            "Tu as trouvé ! ❤️ Tu occupes une place spéciale dans cet univers.";
+            "Tu as trouvé ! ❤️ Tu occupes une place spéciale dans cet univers, ma femme, mon porte bonheur, mon tout, tu représentes tout pour moi avec toi je prêtes tes paroles je me sens, je me sens 🕺🕺🫂❤🤗 .";
     } else {
         document.getElementById("secretResult").textContent =
             "Ce n'est pas le bon code. Essaie encore !";
