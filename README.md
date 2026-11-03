@@ -224,15 +224,36 @@ footer {
         Les images sont des emplacements temporaires.
         Nous ajouterons vos vraies photos ensuite.
     </p>
-   <div class="gallery">
-    <img src="IMG-20261011-WA0065.jpg" onclick="agrandir(this)">
-    <img src="IMG-20261011-WA0068.jpg" onclick="agrandir(this)">
-    <img src="IMG-20261011-WA0071.jpg" onclick="agrandir(this)">
-</div>
+   <section id="gallery">
+    <h2>📸 Nos plus beaux souvenirs</h2>
+    <p>Chaque image garde une partie de notre histoire. ❤️</p>
 
-<div id="visionneuse" onclick="fermer()">
-    <span>×</span>
-    <img id="photoGrande">
+    <div class="gallery">
+
+        <img src="IMG-20261011-WA0065.jpg"
+             alt="Souvenir 1"
+             onclick="ouvrirPhoto(this.src)">
+
+        <img src="IMG-20261011-WA0068.jpg"
+             alt="Souvenir 2"
+             onclick="ouvrirPhoto(this.src)">
+
+        <img src="IMG-20261011-WA0071.jpg"
+             alt="Souvenir 3"
+             onclick="ouvrirPhoto(this.src)">
+
+    </div>
+</section>
+
+<!-- Fenêtre d'agrandissement -->
+<div id="photoModal" onclick="fermerPhoto()">
+
+    <button class="closePhoto"
+            onclick="fermerPhoto()">×</button>
+
+    <img id="photoAgrandie" alt="Photo agrandie"
+         onclick="event.stopPropagation()">
+
 </div>
 
 <section id="story">
