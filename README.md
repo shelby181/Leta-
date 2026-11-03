@@ -5,16 +5,90 @@ Pour toi mon amour 💍❤🫂
 
 <style>
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid #d9b66f;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery img:active {
+    transform: scale(0.96);
+}
+
+/* Fenêtre photo */
+#photoModal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.96);
+    z-index: 99999;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#photoAgrandie {
+    max-width: 100%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.closePhoto {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 42px;
+    cursor: pointer;
+
 }
 
 body {
-    background: #090909;
-    color: white;
-    font-family: Georgia, serif;
-    line-height: 1.7;
+    <section id="gallery">
+    <h2>📸 Nos plus beaux souvenirs</h2>
+    <p>Chaque image garde une partie de notre histoire. ❤️</p>
+
+    <div class="gallery">
+
+        <img src="IMG-20261011-WA0065.jpg"
+             alt="Souvenir 1"
+             onclick="ouvrirPhoto(this.src)">
+
+        <img src="IMG-20261011-WA0068.jpg"
+             alt="Souvenir 2"
+             onclick="ouvrirPhoto(this.src)">
+
+        <img src="IMG-20261011-WA0071.jpg"
+             alt="Souvenir 3"
+             onclick="ouvrirPhoto(this.src)">
+
+    </div>
+</section>
+
+<!-- Fenêtre d'agrandissement -->
+<div id="photoModal" onclick="fermerPhoto()">
+
+    <button class="closePhoto"
+            onclick="fermerPhoto()">×</button>
+
+    <img id="photoAgrandie" alt="Photo agrandie"
+         onclick="event.stopPropagation()">
+
+</div>
 }
 
 header {
@@ -224,38 +298,7 @@ footer {
         Les images sont des emplacements temporaires.
         Nous ajouterons vos vraies photos ensuite.
     </p>
-   <section id="gallery">
-    <h2>📸 Nos plus beaux souvenirs</h2>
-    <p>Chaque image garde une partie de notre histoire. ❤️</p>
-
-    <div class="gallery">
-
-        <img src="IMG-20261011-WA0065.jpg"
-             alt="Souvenir 1"
-             onclick="ouvrirPhoto(this.src)">
-
-        <img src="IMG-20261011-WA0068.jpg"
-             alt="Souvenir 2"
-             onclick="ouvrirPhoto(this.src)">
-
-        <img src="IMG-20261011-WA0071.jpg"
-             alt="Souvenir 3"
-             onclick="ouvrirPhoto(this.src)">
-
-    </div>
-</section>
-
-<!-- Fenêtre d'agrandissement -->
-<div id="photoModal" onclick="fermerPhoto()">
-
-    <button class="closePhoto"
-            onclick="fermerPhoto()">×</button>
-
-    <img id="photoAgrandie" alt="Photo agrandie"
-         onclick="event.stopPropagation()">
-
-</div>
-
+   
 <section id="story">
     <h2>📖 Notre chronologie</h2>
 
@@ -323,7 +366,16 @@ footer {
     <p>Créé avec ❤️ par Shelby.</p>
     <p>Une histoire, des souvenirs, un univers.</p>
 </footer>
+function ouvrirPhoto(source) {
+    document.getElementById("photoAgrandie").src = source;
 
+    document.getElementById("photoModal").style.display = "flex";
+}
+
+function fermerPhoto() {
+    document.getElementById("photoModal").style.display = "none";
+    document.getElementById("photoAgrandie").src = "";
+}
 <script>
 
 // Compteur de jours
