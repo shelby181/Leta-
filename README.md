@@ -224,7 +224,15 @@ footer {
         Les images sont des emplacements temporaires.
         Nous ajouterons vos vraies photos ensuite.
     </p>
-   
+   <div class="gallery">
+    <img src="IMG-20261011-WA0065.jpg" onclick="agrandir(this)">
+    <img src="IMG-20261011-WA0068.jpg" onclick="agrandir(this)">
+    <img src="IMG-20261011-WA0071.jpg" onclick="agrandir(this)">
+</div>
+
+<div id="visionneuse" onclick="fermer()">
+    <span>×</span>
+    <img id="photoGrande">
 </div>
 
 <section id="story">
