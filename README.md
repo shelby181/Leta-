@@ -228,15 +228,15 @@ footer {
     <h2>📸 Notre galerie</h2>
     <p>Quelques images pour conserver nos plus beaux souvenirs.</p>
 
-<div class="gallery">
-    <img src="IMG-20261011-WA0065.jpg" onclick="agrandir(this)">
-    <img src="IMG-20261011-WA0068.jpg" onclick="agrandir(this)">
-    <img src="IMG-20261011-WA0071.jpg" onclick="agrandir(this)">
-</div>
+<function agrandir(photo) {
+    document.getElementById("photoGrande").src = photo.src;
+    document.getElementById("visionneuse").style.display = "flex";
+}
 
-<div id="visionneuse" onclick="this.style.display='none'">
-    <span>✕</span>
-    <img id="photoGrande">
+function fermer() {
+    document.getElementById("visionneuse").style.display = "none";
+}
+<script>
 </div>
 
 <section id="story">
