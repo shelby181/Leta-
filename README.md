@@ -224,19 +224,7 @@ footer {
         Les images sont des emplacements temporaires.
         Nous ajouterons vos vraies photos ensuite.
     </p>
-   section id="gallery">
-    <h2>📸 Notre galerie</h2>
-    <p>Quelques images pour conserver nos plus beaux souvenirs.</p>
-
-<function agrandir(photo) {
-    document.getElementById("photoGrande").src = photo.src;
-    document.getElementById("visionneuse").style.display = "flex";
-}
-
-function fermer() {
-    document.getElementById("visionneuse").style.display = "none";
-}
-<script>
+   
 </div>
 
 <section id="story">
