@@ -1,5 +1,4 @@
 <meta charset="UTF-8">
-*Pour toi mon amour* ❤
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shelby's Universe ❤️</title>
